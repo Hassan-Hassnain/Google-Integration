@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		3C92404623B1684700AD8D04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C92404423B1684700AD8D04 /* Main.storyboard */; };
 		3C92404823B1684B00AD8D04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C92404723B1684B00AD8D04 /* Assets.xcassets */; };
 		3C92404B23B1684B00AD8D04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C92404923B1684B00AD8D04 /* LaunchScreen.storyboard */; };
+		3C92405323B169DE00AD8D04 /* credentials (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C92405223B169DE00AD8D04 /* credentials (1).plist */; };
+		E22631EDA2059119D9FCE836 /* Pods_Google_Integration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415AF57FDD30AAA4263A2BC9 /* Pods_Google_Integration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		3C92404723B1684B00AD8D04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C92404A23B1684B00AD8D04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C92404C23B1684B00AD8D04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C92405223B169DE00AD8D04 /* credentials (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "credentials (1).plist"; sourceTree = "<group>"; };
+		415AF57FDD30AAA4263A2BC9 /* Pods_Google_Integration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Google_Integration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D949C8CCDBAEA4DCE5CD3D29 /* Pods-Google Integration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Google Integration.debug.xcconfig"; path = "Target Support Files/Pods-Google Integration/Pods-Google Integration.debug.xcconfig"; sourceTree = "<group>"; };
+		E32AAFA79501F10241B357DB /* Pods-Google Integration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Google Integration.release.xcconfig"; path = "Target Support Files/Pods-Google Integration/Pods-Google Integration.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E22631EDA2059119D9FCE836 /* Pods_Google_Integration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16185778AF21155D8DE26149 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D949C8CCDBAEA4DCE5CD3D29 /* Pods-Google Integration.debug.xcconfig */,
+				E32AAFA79501F10241B357DB /* Pods-Google Integration.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3C92403223B1684700AD8D04 = {
 			isa = PBXGroup;
 			children = (
 				3C92403D23B1684700AD8D04 /* Google Integration */,
 				3C92403C23B1684700AD8D04 /* Products */,
+				16185778AF21155D8DE26149 /* Pods */,
+				7925756BCB5306DEDC9ED195 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +81,17 @@
 				3C92404723B1684B00AD8D04 /* Assets.xcassets */,
 				3C92404923B1684B00AD8D04 /* LaunchScreen.storyboard */,
 				3C92404C23B1684B00AD8D04 /* Info.plist */,
+				3C92405223B169DE00AD8D04 /* credentials (1).plist */,
 			);
 			path = "Google Integration";
+			sourceTree = "<group>";
+		};
+		7925756BCB5306DEDC9ED195 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				415AF57FDD30AAA4263A2BC9 /* Pods_Google_Integration.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C92404F23B1684B00AD8D04 /* Build configuration list for PBXNativeTarget "Google Integration" */;
 			buildPhases = (
+				DDBF55EC3CE61048E05DD841 /* [CP] Check Pods Manifest.lock */,
 				3C92403723B1684700AD8D04 /* Sources */,
 				3C92403823B1684700AD8D04 /* Frameworks */,
 				3C92403923B1684700AD8D04 /* Resources */,
+				70F25B08491952DA0A69CFEB /* [CP] Embed Pods Frameworks */,
+				3CFA81F3934B4B2B3C9C0CCD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,10 +158,70 @@
 				3C92404B23B1684B00AD8D04 /* LaunchScreen.storyboard in Resources */,
 				3C92404823B1684B00AD8D04 /* Assets.xcassets in Resources */,
 				3C92404623B1684700AD8D04 /* Main.storyboard in Resources */,
+				3C92405323B169DE00AD8D04 /* credentials (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CFA81F3934B4B2B3C9C0CCD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Google Integration/Pods-Google Integration-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Google Integration/Pods-Google Integration-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Google Integration/Pods-Google Integration-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70F25B08491952DA0A69CFEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Google Integration/Pods-Google Integration-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Google Integration/Pods-Google Integration-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Google Integration/Pods-Google Integration-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDBF55EC3CE61048E05DD841 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Google Integration-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3C92403723B1684700AD8D04 /* Sources */ = {
@@ -282,6 +372,7 @@
 		};
 		3C92405023B1684B00AD8D04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D949C8CCDBAEA4DCE5CD3D29 /* Pods-Google Integration.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +391,7 @@
 		};
 		3C92405123B1684B00AD8D04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E32AAFA79501F10241B357DB /* Pods-Google Integration.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

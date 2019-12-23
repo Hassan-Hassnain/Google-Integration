@@ -1,0 +1,6 @@
+framework module Pods_Google_Integration {
+  umbrella header "Pods-Google Integration-umbrella.h"
+
+  export *
+  module * { export * }
+}
